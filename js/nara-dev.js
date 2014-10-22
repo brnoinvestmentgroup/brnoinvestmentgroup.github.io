@@ -270,10 +270,7 @@ jQuery(document).ready(function($) {
 	//$("#contact-form").validate();
 
 	$('.contact .submit').click(function(){ 
-
-		console.log('init');
 		
-
 		$('.contact input#name').removeClass("input-error");
 		$('.contact input#subject').removeClass("input-error");
 		$('.contact textarea#message').removeClass("input-error");
@@ -313,8 +310,6 @@ jQuery(document).ready(function($) {
 			return false;
 		}
 
-		console.log('validation-ok'); 
-
 		
 		var data_string = $('.contact form').serialize(); 
 		
@@ -353,10 +348,8 @@ jQuery(document).ready(function($) {
 			$('.contact input#email').val('');
 			$('.contact input#subject').val('');
 			$('.contact textarea#message').val('');
-			console.log('send');
 		});
 
-		console.log('end');
 		return false; 
 	});
 	//Contact
