@@ -266,9 +266,13 @@ jQuery(document).ready(function($) {
 
 	//Contact
 
+	
 	//$("#contact-form").validate();
 
 	$('.contact .submit').click(function(){ 
+
+		console.log('init');
+		
 
 		$('.contact input#name').removeClass("input-error");
 		$('.contact input#subject').removeClass("input-error");
@@ -309,9 +313,12 @@ jQuery(document).ready(function($) {
 			return false;
 		}
 
+		console.log('validation-ok'); 
+
+		
 		var data_string = $('.contact form').serialize(); 
 		
-		/*
+		
 		$.ajax({
 			type: "POST",
 			url: $('.contact form').attr('action'),
@@ -329,13 +336,16 @@ jQuery(document).ready(function($) {
 					$('.contact .message-error').fadeIn('slow');
 				}
 			}
-		});*/
+		});
 
 		$.ajax({
 		  dataType: 'jsonp',
-		  url: "http://getsimpleform.com/messages?form_api_token=f454e19f2959c17e1bca99de3afb0772",
+		  url: "http://getsimpleform.com/messages/ajax?form_api_token=f454e19f2959c17e1bca99de3afb0772",
 		  data: {
-		    message: data_string
+		    name: $('.contact input#name').val(),
+			email: $('.contact input#email').val(),
+			subjeckt: $('.contact input#subject').val(),
+			message: $('.contact textarea#message').val()
 		  }
 		}).done(function() {
 			$('.contact .message-success').fadeIn('slow');
@@ -343,8 +353,10 @@ jQuery(document).ready(function($) {
 			$('.contact input#email').val('');
 			$('.contact input#subject').val('');
 			$('.contact textarea#message').val('');
+			console.log('send');
 		});
 
+		console.log('end');
 		return false; 
 	});
 	//Contact
@@ -386,7 +398,6 @@ $(window).load(function() {
 			if (direction === "up")  sectionOffset = '30%';
 			$('.navigation li[data-url="' + name + '"]').addClass('active', {duration:300});
 			$('.navigation li[data-url="' + name + '"]').siblings().removeClass('active', {duration:300});
-			console.log(name);
 	  	},
 		offset: sectionOffset
 	});
