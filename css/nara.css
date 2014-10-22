@@ -1126,6 +1126,13 @@
 		*/
 	}
 
+	.contact .message-success{
+		background: none repeat scroll 0 0 #82b440;
+    	color: #fff;
+    	padding: 10px;
+    	margin-bottom: 20px;
+    }
+
 
 /* #Footer
 ================================================== */
