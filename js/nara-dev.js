@@ -265,6 +265,9 @@ jQuery(document).ready(function($) {
 	//Blog
 
 	//Contact
+
+	//$("#contact-form").validate();
+
 	$('.contact .submit').click(function(){ 
 
 		$('.contact input#name').removeClass("input-error");
@@ -308,6 +311,7 @@ jQuery(document).ready(function($) {
 
 		var data_string = $('.contact form').serialize(); 
 		
+		/*
 		$.ajax({
 			type: "POST",
 			url: $('.contact form').attr('action'),
@@ -325,6 +329,20 @@ jQuery(document).ready(function($) {
 					$('.contact .message-error').fadeIn('slow');
 				}
 			}
+		});*/
+
+		$.ajax({
+		  dataType: 'jsonp',
+		  url: "http://getsimpleform.com/messages?form_api_token=f454e19f2959c17e1bca99de3afb0772",
+		  data: {
+		    message: data_string
+		  }
+		}).done(function() {
+			$('.contact .message-success').fadeIn('slow');
+			$('.contact input#name').val('');
+			$('.contact input#email').val('');
+			$('.contact input#subject').val('');
+			$('.contact textarea#message').val('');
 		});
 
 		return false; 
