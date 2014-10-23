@@ -139,6 +139,10 @@
 			width: 236px !important;
 		}
 
+		.projects .second-line .project {
+			width: 46% !important;
+		}
+
 		.projects .project .info {
 			height: 80px !important;
 			margin: 236px 0px;
@@ -641,6 +645,14 @@
 			width: 420px;
 		}
 
+		/* #backgrounds
+		================================================== */
+
+		.quotes {
+			/*background-image: url(../img/backgrounds/portrait/quotes.jpg);*/
+			background: none;
+		}
+
 
 	}
 
@@ -690,7 +702,8 @@
 		}
 
 		.quotes {
-			background-image: url(../img/backgrounds/portrait/quotes.jpg);
+			/*background-image: url(../img/backgrounds/portrait/quotes.jpg);*/
+			background: none;
 		}
 
 		.facts {
