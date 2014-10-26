@@ -530,7 +530,7 @@
 	.services .servicesContent li{
 		border-bottom: 1px solid #ccc;
 	    float: left;
-	    height: 110px;
+	    height: 140px;
 	    margin-bottom: 0;
 	    padding: 22px 80px;
 	    text-align: left;
@@ -546,20 +546,20 @@
 	}
 
 	.services .ico1{
-		background: url(../img/misc/ico-services-1.png) no-repeat 25px 35px;
+		background: url(../img/misc/ico-services-1.png) no-repeat 25px 45px;
 		padding-top: 38px !important;
 	}
 
 	.services .ico2{
-		background: url(../img/misc/ico-services-2.png) no-repeat 25px 36px;
+		background: url(../img/misc/ico-services-2.png) no-repeat 25px 47px;
 	}
 
 	.services .ico3{
-		background: url(../img/misc/ico-services-3.png) no-repeat 15px 20px;
+		background: url(../img/misc/ico-services-3.png) no-repeat 15px 30px;
 	}
 
 	.services .ico4{
-		background: url(../img/misc/ico-services-4.png) no-repeat 25px 24px;
+		background: url(../img/misc/ico-services-4.png) no-repeat 25px 34px;
 		padding-top: 27px !important;
 	}
 
