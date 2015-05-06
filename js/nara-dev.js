@@ -506,7 +506,7 @@ function loadServices() {
 
 }
 
-function loadMap() {
+/*function loadMap() {
 	
 	if($('#map').length) {
 		var mapElement = document.getElementById('map');
@@ -535,4 +535,4 @@ function loadMap() {
 	    marker = new google.maps.Marker( {position: LatLng, map: map, icon: image} );
 	    marker.setPosition( new google.maps.LatLng( Lat, Lng ) );
 	}
-}
+}*/
