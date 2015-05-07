@@ -371,7 +371,7 @@ jQuery(document).ready(function($) {
 $(window).load(function() {
 
 	fixSizes();
-	loadMap();
+	//loadMap();
 
 	var windowHeight = $(window).height();
 	var windowWidth = $(window).width();
