@@ -1,7 +1,9 @@
 body		{ font-family: 'Open Sans', sans-serif; font-size: 16px; line-height: 1.7em; }
 p,
-ul 			{ margin: 0 0 20px; }
+ul 			{ margin: 0 0 40px; }
 h1			{ font-size: 48px; margin: 40px 0; }
+h2			{ font-size: 26px; margin: 5px 0; }
+
 .footer 	{ font-size: 14px; color:#888; text-align: center; padding: 15px 0; font-weight: bold; }
 .logo 		{ margin: 25px 0; }
 .black		{ background: #000; }
