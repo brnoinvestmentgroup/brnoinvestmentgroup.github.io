@@ -160,7 +160,12 @@
         .container .fifteen.columns,
         .container .sixteen.columns,
         .container .one-third.column,
-        .container .two-thirds.column  { width: 300px; }
+        .container .two-thirds.column,
+        .container .two-thirds.column.member,
+        .container .two-thirds.column.project  { width: 300px; }
+
+        .container .two-thirds.column.member,
+        .container .two-thirds.column.project { margin-left: 0; }
 
         /* Offsets */
         .container .offset-by-one,
@@ -210,7 +215,12 @@
         .container .fifteen.columns,
         .container .sixteen.columns,
         .container .one-third.column,
-        .container .two-thirds.column { width: 420px; }
+        .container .two-thirds.column,
+        .container .two-thirds.column.member,
+        .container .two-thirds.column.project { width: 420px; }
+
+        .container .two-thirds.column.member,
+        .container .two-thirds.column.project { margin-left: 0; }
     }
 
 
